@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE | echo > "main.c"
+gcc -S $CFILE | tr ".s" ".c"

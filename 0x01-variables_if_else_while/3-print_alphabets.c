@@ -9,11 +9,13 @@
 
 int main(void)
 {
-int num_asc;
-for (num_asc = 97; num_asc != 123; num_asc++)
-putchar (num_asc);
-for (num_asc = 65; num_asc != 91; num_asc++)
-putchar (num_asc);
-putchar (10);
-return (0);
+	int num_asc;
+
+	for (num_asc = 97; num_asc != 123; num_asc++)
+		putchar (num_asc);
+	for (num_asc = 65; num_asc != 91; num_asc++)
+		putchar (num_asc);
+	putchar (10);
+	return (0);
 }
+

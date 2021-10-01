@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar (num_asc);
 		if (num_asc == 57)
-			num_asc = 97;
+			num_asc = 96;
 	}
 	putchar (10);
 	return (0);

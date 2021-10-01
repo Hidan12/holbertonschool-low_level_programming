@@ -11,7 +11,7 @@ int main(void)
 {
 	int num_asc;
 
-	for (num_asc = 97; num_asc != 123; num_asc++)
+	for (num_asc = 122; num_asc != 96; num_asc--)
 		putchar (num_asc);
 	putchar (10);
 	return (0);

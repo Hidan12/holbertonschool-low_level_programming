@@ -9,10 +9,17 @@
 
 int main(void)
 {
-	int num;
+	int num_asc;
 
-	for (num = 0; num < 10; num++)
-		printf("%d", num);
+	for (num_asc = 48; num_asc != 58; num_asc++)
+	{
+		putchar (num_asc);
+		if (num_asc != 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+	}
 	putchar (10);
 	return (0);
 }

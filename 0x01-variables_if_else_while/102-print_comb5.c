@@ -35,7 +35,7 @@ int main(void)
 						}
 					}
 				}
-				cont = (num_asc1 + 1);
+				cont = (num_asc1);
 			}
 		}
 	}

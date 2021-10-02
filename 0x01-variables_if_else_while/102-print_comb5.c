@@ -10,8 +10,7 @@
 
 int main(void)
 {
-	int num_asc, num_asc1, num_asc2, num_asc3, cont;
-	cont = 48;
+	int num_asc, num_asc1, num_asc2, num_asc3, cont = 48;
 
 	for (num_asc = 48; num_asc != 58; num_asc++)
 	{
@@ -21,22 +20,23 @@ int main(void)
 			{
 				for (num_asc3 = cont; num_asc3 <= 57; num_asc3++)
 				{
-					if ((num_asc != num_asc2) || (num_asc1 != num_asc3) )
+					if ((num_asc != num_asc2) || (num_asc1 != num_asc3))
 					{
 						putchar (num_asc);
 						putchar (num_asc1);
 						putchar (32);
 						putchar (num_asc2);
 						putchar (num_asc3);
-						if  ((num_asc != 57) || (num_asc1 != 56) || (num_asc3 != 57) || (num_asc3 != 57))
+						if  ((num_asc != 57) || (num_asc1 != 56) ||
+						     (num_asc3 != 57) || (num_asc3 != 57))
 						{
 							putchar(44);
 							putchar(32);
 						}
 					}
 				}
-				cont = (num_asc1);
 			}
+			cont = (num_asc1 + 1);
 		}
 	}
 	putchar (10);

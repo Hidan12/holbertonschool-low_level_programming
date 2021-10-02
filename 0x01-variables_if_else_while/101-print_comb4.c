@@ -14,7 +14,7 @@ int main(void)
 
 	for (num_asc = 48; num_asc != 58; num_asc++)
 	{
-		for (num_asc1 = (num_asc + 1); num_asc1 <= 57; num_asc1++)
+		for (num_asc1 = 48; num_asc1 <= 57; num_asc1++)
 		{
 			for (num_asc3 = (num_asc1 + 1); num_asc3 <= 57; num_asc3++)
 			{

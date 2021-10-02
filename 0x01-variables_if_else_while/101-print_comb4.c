@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -9,24 +10,21 @@
 
 int main(void)
 {
-	int num_asc_1, num_asc_2, num_asc_3;
+	int num_asc, num_asc1, num_asc3;
 
-	for (num_asc_1 = 48; num_asc_1 < 58; num_asc_1++)
+	for (num_asc = 48; num_asc != 58; num_asc++)
 	{
-		for (num_asc_2 =+ num_asc_1; num_asc_2 < 58; num_asc_2++)
+		for (num_asc1 = (num_asc + 1); num_asc1 <= 57; num_asc1++)
 		{
-			for (num_asc_3 =+ num_asc_2; num_asc_3 < 58; num_asc_3++)
+			for (num_asc3 = (num_asc1 + 1); num_asc3 <= 57; num_asc3++)
 			{
-				if (num_asc_2 != num_asc_3 && num_asc_1 != num_asc_2)
+				putchar (num_asc);
+				putchar (num_asc1);
+				putchar (num_asc3);
+					if  ((num_asc != 55) || (num_asc1 != 56) || (num_asc3 != 57))
 				{
-					putchar(num_asc_1);
-					putchar(num_asc_2);
-					putchar(num_asc_3);
-					if ((num_asc_1 =! 55) && (num_asc_2 != 56) && (num_asc_3 != 57))
-					{
 					putchar(44);
 					putchar(32);
-					}
 				}
 			}
 		}

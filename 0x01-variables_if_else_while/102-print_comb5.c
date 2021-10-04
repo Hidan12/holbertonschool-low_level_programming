@@ -31,6 +31,7 @@ int main(void)
 						putchar(44);
 						putchar(32);
 					}
+					cont = 48;
 				}
 			}
 			cont = (num_asc1 + 2);

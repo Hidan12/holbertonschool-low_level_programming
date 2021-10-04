@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int num_asc, num_asc1, num_asc2, num_asc3, cont = 48;
+	int num_asc, num_asc1, num_asc2, num_asc3, cont = 49;
 
 	for (num_asc = 48; num_asc != 58; num_asc++)
 	{
@@ -37,6 +37,7 @@ int main(void)
 			cont = (num_asc1 + 2);
 		}
 	}
+	putchar (32);
 	return (0);
 }
 

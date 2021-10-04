@@ -37,7 +37,6 @@ int main(void)
 			cont = (num_asc1 + 2);
 		}
 	}
-	putchar (10);
 	return (0);
 }
 

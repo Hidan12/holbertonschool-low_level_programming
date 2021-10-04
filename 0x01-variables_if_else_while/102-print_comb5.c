@@ -31,9 +31,9 @@ int main(void)
 						putchar(44);
 						putchar(32);
 					}
-					cont = (num_asc1 + 1);
 				}
 			}
+			cont = (num_asc1 + 2);
 		}
 	}
 	putchar (10);

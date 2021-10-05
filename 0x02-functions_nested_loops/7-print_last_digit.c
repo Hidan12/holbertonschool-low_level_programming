@@ -18,11 +18,11 @@ int print_last_digit(int n)
 	}
 	else if (n < 0)
 	{
-		n = n * -1;
 		n = n % 10;
-		cv = (n + 48);
+		n = -n;
+		cv = (n + '0');
 		_putchar(cv);
-		return (cv);
+		return (n);
 	}
 	n = n % 10;
 	_putchar(n + 48);

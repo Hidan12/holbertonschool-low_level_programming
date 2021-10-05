@@ -26,7 +26,7 @@ void times_table(void)
 			}
 			if (b < 9)
 			{
-				if ((a * (b + 1)) < 10 )
+				if ((a * (b + 1)) < 10)
 				{
 					_putchar(44);
 					_putchar(32);

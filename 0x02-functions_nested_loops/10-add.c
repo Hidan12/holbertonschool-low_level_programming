@@ -4,6 +4,8 @@
  *
  * Return: 1 Is ok
  *
+ *@a: num
+ *@b: num
  */
 
 int add(int a, int b)

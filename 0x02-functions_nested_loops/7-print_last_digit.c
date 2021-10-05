@@ -9,6 +9,8 @@
 
 int print_last_digit(int n)
 {
+	int cv;
+
 	if (n ==  0)
 	{
 		_putchar(48);
@@ -18,8 +20,9 @@ int print_last_digit(int n)
 	{
 		n = n * -1;
 		n = n % 10;
-		_putchar(n + 48);
-		return (n);
+		cv = '0' + n;
+		_putchar(cv);
+		return (cv);
 	}
 	n = n % 10;
 	_putchar(n + 48);

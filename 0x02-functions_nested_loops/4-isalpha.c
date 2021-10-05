@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * __isalpha - Entry point
+ * _isalpha - Entry point
  *
  * Return: 1 Is ok
  *

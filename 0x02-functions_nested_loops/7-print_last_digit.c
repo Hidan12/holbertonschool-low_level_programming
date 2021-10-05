@@ -20,7 +20,7 @@ int print_last_digit(int n)
 	{
 		n = n * -1;
 		n = n % 10;
-		cv = ('0' + n);
+		cv = (n + 48);
 		_putchar(cv);
 		return (cv);
 	}

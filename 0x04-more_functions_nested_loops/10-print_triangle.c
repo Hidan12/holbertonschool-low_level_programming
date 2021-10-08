@@ -16,17 +16,17 @@ void print_triangle(int n)
 			{
 				for (; c > 1; c--)
 				{
-					if (cor == 1)
-						break;
-					else
+					if (cor != 1)
 						_putchar(32);
+					else
+						break;
 				}
 				c = (n - a);
 				cor = 1;
 				_putchar(35);
 			}
 			cor = 0;
-			if (a <n)
+			if (a < n)
 				_putchar(10);
 		}
 	}

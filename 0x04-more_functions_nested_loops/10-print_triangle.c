@@ -10,11 +10,11 @@ void print_triangle(int n)
 
 	if (n >= 1)
 	{
-		for (a = 0; a <= n; a++)
+		for (a = 1; a <= n; a++)
 		{
-			for (b = 0; b < a; b++)
+			for (b = 1; b <= a; b++)
 			{
-				for (; c > 1; c--)
+				for (; c > 1; --c)
 				{
 					if (cor != 1)
 						_putchar(32);
@@ -26,7 +26,7 @@ void print_triangle(int n)
 				_putchar(35);
 			}
 			cor = 0;
-			if (a < n)
+			if (a <= n)
 				_putchar(10);
 		}
 	}

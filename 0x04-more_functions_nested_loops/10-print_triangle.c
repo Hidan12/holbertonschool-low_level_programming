@@ -8,7 +8,7 @@ void print_triangle(int n)
 {
 	int a, b, c = n, cor = 0;
 
-	if (n > 1)
+	if (n >= 1)
 	{
 		for (a = 0; a <= n; a++)
 		{
@@ -29,13 +29,6 @@ void print_triangle(int n)
 			if (a < n)
 				_putchar(10);
 		}
-		if (n > 2)
-			_putchar(10);
-	}
-	else if (n == 1)
-	{
-		_putchar(35);
-		_putchar(10);
 	}
 	else
 		_putchar(10);

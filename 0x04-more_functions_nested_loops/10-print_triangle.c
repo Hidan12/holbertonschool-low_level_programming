@@ -29,6 +29,8 @@ void print_triangle(int n)
 			if (a < n)
 				_putchar(10);
 		}
+		if (n > 2)
+			_putchar(10);
 	}
 	else if (n == 1)
 	{

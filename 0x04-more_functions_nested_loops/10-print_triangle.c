@@ -36,4 +36,6 @@ void print_triangle(int n)
 		_putchar(35);
 		_putchar(10);
 	}
+	else
+		_putchar(10);
 }

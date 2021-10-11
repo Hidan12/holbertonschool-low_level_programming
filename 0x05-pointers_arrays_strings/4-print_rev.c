@@ -11,9 +11,8 @@ void print_rev(char *str)
 
 	for (a = 0; str[a] != '\0'; a++)
 		continue;
-	if (str[a] == ' ')
-		a--;
-	for (b = a; b >= 0; b--)
+	a--;
+	for (b = a; str[b] != '\0'; b--)
 	{
 		_putchar(str[b]);
 	}

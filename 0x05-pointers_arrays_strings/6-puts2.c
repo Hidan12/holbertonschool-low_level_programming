@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - print
+ * puts2 - print
  *
  * @str: char
  *
@@ -10,10 +10,9 @@ void puts2(char *str)
 {
 	int a;
 
-	for (a = 0; str[a] != '\0'; a++)
+	for (a = 0; str[a] != '\0'; a += 2)
 	{
 		_putchar(str[a]);
-		a++;
 	}
 	_putchar(10);
 

@@ -1,23 +1,15 @@
 #include "main.h"
 /**
- * *_strncpy - join two pointers
+ * reverse_array - reverse
  *
- * @dest: pointer1
- *
- * @src: pointer2
+ * @a: pointer1
  *
  * @n: amount
  *
- * Return: the union two pointer.
  */
 
-char *_strncpy(char *dest, char *src, int n)
+void reverse_array(int *a, int n)
 {
-	int i;
-
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
-	for ( ; i < n; i++)
-		dest[i] = '\0';
-	return (dest);
+	for (;n >= 0; n--)
+		_putchar(a[n]);
 }

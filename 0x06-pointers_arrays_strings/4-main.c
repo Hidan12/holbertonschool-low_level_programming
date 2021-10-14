@@ -1,5 +1,5 @@
 #include "main.h"
-	#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -22,10 +22,8 @@ void print_array(int *a, int n)
 		}
 		printf("%d", a[i]);
 		i++;
-		    
 	}
 	printf("\n");
-	
 }
 
 /**

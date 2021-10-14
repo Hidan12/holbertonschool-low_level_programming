@@ -25,6 +25,6 @@ char *_strncat(char *dest, char *src, int n)
 		if ((n > tam_2 && un == tam_2) || (n < tam_2 && un < n))
 			break;
 	}
-	dest[tam_1 + 1] = '\0';
+	dest[tam_1] = '\0';
 	return (dest);
 }

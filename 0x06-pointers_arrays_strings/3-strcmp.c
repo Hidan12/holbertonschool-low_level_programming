@@ -21,5 +21,5 @@ int _strcmp(char *s1, char *s2)
 			return (conv_1 - conv_2);
 		a++;
 	}
-	return(0);
+	return (0);
 }

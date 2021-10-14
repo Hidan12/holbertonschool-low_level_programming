@@ -6,18 +6,18 @@
  *
  * @s2: pointer2
  *
- * @n: amount
- *
  * Return: 0 if they are equal.
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	while (*s1 && *s2)
+	int a = 0;
+
+	while (s1[a] != '\0' && s2[a] != '\0')
 	{
-		if (s1 != s2)
-			return (s1 - s1);
-		s1++, s2++;
+		if (s1[a] != s2[a])
+			return (s1[a] - s1[a]);
+		a++;
 	}
-	return(s1 - s2);
+	return(0);
 }

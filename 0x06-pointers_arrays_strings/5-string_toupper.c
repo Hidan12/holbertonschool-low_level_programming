@@ -1,14 +1,10 @@
 #include "main.h"
 /**
- * _strcmp - compare two pointers
+ * *string_toupper - convert to uppercase
  *
- * @s1: pointer1
+ * @a: pointer
  *
- * @s2: pointer2
- *
- * @n: amount
- *
- * Return: 0 if they are equal.
+ * Return: pointer.
  */
 char *string_toupper(char *a)
 {

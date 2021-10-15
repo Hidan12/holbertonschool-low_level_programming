@@ -8,7 +8,7 @@
  */
 char *cap_string(char *a)
 {
-	char let, *ch = ".,\n\t:;";
+	char let, *ch = ".,\n\t:; ";
 	int num_asc, pos, pos_c;
 
 	for (pos = 0; a[pos] != '\0'; pos++)

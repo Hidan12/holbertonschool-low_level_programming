@@ -13,11 +13,11 @@ char *string_toupper(char *a)
 
 	for (pos = 0; a[pos] != '\0'; pos++)
 	{
-		num_asc = (char)*a;
+		num_asc = (char)a[pos];
 		if (num_asc <= 122 && num_asc >= 97)
 		{
 			let = (num_asc - 32);
-			*a = let;
+			a[pos] = let;
 		}
 	}
 	return (a);

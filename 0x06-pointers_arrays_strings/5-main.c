@@ -18,11 +18,7 @@ int main(void)
 
 	ptr = string_toupper(str);
 
-	printf("hola \n");
-
 	printf("%s", ptr);
-
-	printf("que hace");
 	printf("%s", str);
 	return (0);
 }

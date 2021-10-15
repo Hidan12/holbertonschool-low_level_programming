@@ -8,7 +8,7 @@
  */
 char *cap_string(char *a)
 {
-	char let, c = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
+	char let, c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
 	int num_asc, pos, pos_c;
 
 	for (pos = 0; a[pos] != '\0'; pos++)

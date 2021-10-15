@@ -23,8 +23,6 @@ char *cap_string(char *a)
 		{
 			if (a[pos] == ch[pos_c] && (a[pos + 1] >= 97 && a[pos + 1] <= 122))
 			{
-				if(a[pos] == '\t')
-					a[pos] = ' ';
 				num_asc = (char)a[pos + 1];
 				let = (num_asc - 32);
 				a[pos + 1] = let;

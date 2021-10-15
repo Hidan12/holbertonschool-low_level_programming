@@ -20,11 +20,13 @@ char *cap_string(char *a)
 			let = (num_asc - 32);
 			a[pos] = let;
 		}
-		else if(a[pos - 1] == '\n')
+		else if (a[pos - 1] == '\n')
 		{
 			let = (num_asc - 32);
 			a[pos] = let;
 		}
+		else if (a[pos] == '\t')
+			a[pos] = ' ';
 	}
 	return (a);
 }

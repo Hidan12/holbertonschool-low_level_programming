@@ -13,9 +13,9 @@
 char *string_toupper(char *a)
 {
 	char let;
-	int num_asc;
+	int num_asc, pos;
 
-	for (; *a; a++)
+	for (pos = 0; a[pos] != '\0'; pos++)
 	{
 		num_asc = (char)*a;
 		if (num_asc <= 122 && num_asc >= 97)

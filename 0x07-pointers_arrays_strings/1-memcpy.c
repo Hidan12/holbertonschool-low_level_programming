@@ -1,14 +1,12 @@
 #include "main.h"
 /**
- * *_memset - string to modify
+ * *_strcat - join two pointers
  *
- * @s: string
+ * @dest: pointer1
  *
- * @b: character to add
+ * @src: pointer2
  *
- * @n:how far to go
- *
- * Return: string.
+ * Return: the union two pointer.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -16,7 +14,7 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (tam = 0; s[tam] != '\0'; tam++)
 		continue;
-	for (a = 0; n != 0; n--)
+	for (a = 0; n != 0; n --)
 	{
 		s[a] = b;
 		a++;

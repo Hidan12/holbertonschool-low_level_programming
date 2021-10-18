@@ -1,23 +1,24 @@
 #include "main.h"
 /**
- * *_strcat - join two pointers
+ * *_memcpy -union two pointer
  *
  * @dest: pointer1
  *
  * @src: pointer2
  *
+ * @n;how far to go
+ *
  * Return: the union two pointer.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int tam, a;
+	int a;
 
-	for (tam = 0; s[tam] != '\0'; tam++)
-		continue;
 	for (a = 0; n != 0; n --)
 	{
-		s[a] = b;
+		*dest = src[a];
+		dest++;
 		a++;
 	}
-	return (s);
+	return (dest);
 }

@@ -14,9 +14,11 @@ char *cap_string(char *a)
 	for (pos = 0; a[pos] != '\0'; pos++)
 	{
 		num_asc = (char)a[pos];
-		if (pos == 0 && (a[pos] >= 97 && a[pos] <= 122))
+		if (pos == 0 && (num_asc >= 97 && num_asc <= 122))
 		{
-			a[pos] = a[pos] + 32;
+			num_asc = (char)a[pos];
+			let = (num_asc - 32);
+			a[pos] = let;
 		}
 
 		for (pos_c = 0; ch[pos_c] != '\0'; pos_c++)

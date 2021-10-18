@@ -10,13 +10,11 @@
  */
 char *_strchr(char *s, char c)
 {
-	int a;
 
-	for (a = 0; *s != '\0'; a++)
+	for (; *s != '\0'; s++)
 	{
 		if (*s == c)
-			return (s--);
-		s++;
+			return (s);
 	}
-	return (s);
+	return ('\0');
 }

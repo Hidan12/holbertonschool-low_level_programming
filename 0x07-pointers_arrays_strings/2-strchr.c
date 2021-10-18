@@ -4,7 +4,7 @@
  *
  * @s: string
  *
- * @c: character 
+ * @c: character
  *
  * Return: the string from where the character is found.
  */

@@ -6,7 +6,7 @@
  *
  * @src: pointer2
  *
- * @n;how far to go
+ * @n: how far to go
  *
  * Return: the union two pointer.
  */
@@ -14,7 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	int a;
 
-	for (a = 0; n != 0; n --)
+	for (a = 0; n != 0; n--)
 	{
 		*dest = src[a];
 		dest++;

@@ -28,7 +28,6 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (ban == 1)
 			return ((haystack + a));
-		a += b;
 	}
 	return (0);
 }

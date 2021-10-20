@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strstr - function locates the first occurrence in the string
+ * _strstr - function locates the first occurrence in the string
  *
  * @haystack: string
  *

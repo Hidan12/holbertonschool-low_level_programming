@@ -11,6 +11,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int a, sum;
+
 	sum = 0;
 	for (; *s != '\0'; s++)
 	{

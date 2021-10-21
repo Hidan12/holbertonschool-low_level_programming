@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * factorial - size string
+ * factorial - factor a number
  *
- * @s: string
+ * @n: number
  *
- * Return: size
+ * Return: factor
  */
 int factorial(int n)
 {

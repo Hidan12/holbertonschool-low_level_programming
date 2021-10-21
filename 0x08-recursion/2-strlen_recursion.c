@@ -4,7 +4,7 @@
  *
  * @s: string
  *
- * Return - size
+ * Return: size
  */
 int _strlen_recursion(char *s)
 {

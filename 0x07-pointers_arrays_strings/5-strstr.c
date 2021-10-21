@@ -26,7 +26,7 @@ char *_strstr(char *haystack, char *needle)
 				break;
 			}
 		}
-		if (ban == 1)
+		if (ban == 1 || needle[b] == '\0')
 			return (&haystack[a]);
 		a += (b - 1);
 	}

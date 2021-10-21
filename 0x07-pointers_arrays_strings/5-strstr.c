@@ -28,7 +28,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (ban == 1)
 			return (&haystack[a]);
-		a += b;
+		a += (b - 1);
 	}
-	return ('\0');
+	return (haystack);
 }

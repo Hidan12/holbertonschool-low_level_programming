@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (a = 0; argv[i][a] != '0'; a++)
+			for (a = 0; argv[i][a] != '\0'; a++)
 			{
 				num = argv[i][a];
 				if (!(num > 47 && num < 58))

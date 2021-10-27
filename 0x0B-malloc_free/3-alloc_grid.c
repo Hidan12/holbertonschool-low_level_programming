@@ -32,7 +32,6 @@ int **alloc_grid(int width, int height)
 				free(ptr);
 				return('\0');
 			}
-			
 		}
 		for (a = 0; a < height; a++)
 		{
@@ -40,9 +39,7 @@ int **alloc_grid(int width, int height)
 			{
 				ptr[a][b] = 0;
 			}
-			printf("%d\n", ptr[a][34]);
 		}
-		printf("%d\n", ptr[0][34]);
 		return (ptr);
 	}
 	else

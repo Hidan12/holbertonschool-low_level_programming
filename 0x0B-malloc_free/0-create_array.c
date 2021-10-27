@@ -18,7 +18,6 @@ char *create_array(unsigned int size, char c)
 		{
 			ptr[a] = c;
 		}
-		free(ptr);
 		return (ptr);
 	}
 	return ('\0');

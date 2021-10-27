@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * *create_array - create array
+ * *_strdup - copy array
  *
- * @size: pointer
- * @c: char
+ * @str: string
+ *
  * Return: Pointer.
  */
 char *_strdup(char *str)
@@ -18,7 +18,7 @@ char *_strdup(char *str)
 		ptr = malloc(sizeof(char) * size);
 		if (ptr == NULL)
 			return ('\0');
-		for (a = 0; a < size; a++)
+		for (a = 0; a <= size; a++)
 		{
 			ptr[a] = str[a];
 		}

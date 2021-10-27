@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 			if (ptr[a] == NULL)
 				return ('\0');
 		}
-		ptr[a+1] = '\0'
+		ptr[a+1] = '\0';
 		return (ptr);
 	}
 	else

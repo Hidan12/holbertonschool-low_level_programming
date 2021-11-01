@@ -1,15 +1,9 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- * init_dog - dog attributes
+ * print_dog - print dog attributes
  *
  * @d: structure at the function
- *
- * @name: dog's name
- *
- * @age: dog's age
- *
- * @owner: dog's owner name
  *
  */
 void print_dog(struct dog *d)

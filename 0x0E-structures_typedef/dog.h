@@ -19,7 +19,7 @@ struct dog
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 /**
- * dog strucut with typedef
+ * dog - strucut with typedef
  */
 typedef struct dog dog_t;
 #endif

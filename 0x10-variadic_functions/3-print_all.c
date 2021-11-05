@@ -6,12 +6,12 @@
  */
 void print_all(const char * const format, ...)
 {
-	int pos;
+	int pos = 0;
 	char *b;
 	va_list ap;
 
 	va_start(ap, format);
-	if (format)
+	if (format != NULL)
 	{
 		while (format[pos])
 		{
@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 				b = va_arg(ap, char *);
 				if (b != NULL)
 				{
-					printf("%s ", b);
+					printf("%s", b);
 					break;
 				}
 				printf("(nil)");
@@ -41,6 +41,7 @@ void print_all(const char * const format, ...)
 			}
 			pos++;
 		}
-	va_end(ap);
 	}
+	printf("\n");
+	va_end(ap);
 }

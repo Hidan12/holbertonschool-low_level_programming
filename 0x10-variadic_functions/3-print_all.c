@@ -39,7 +39,8 @@ void print_all(const char * const format, ...)
 				pos++;
 				continue;
 			}
-			printf(", ");
+			if (format[pos + 1] != '\0')
+				printf(", ");
 			pos++;
 		}
 	}

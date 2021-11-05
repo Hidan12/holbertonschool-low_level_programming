@@ -24,19 +24,20 @@ void print_all(const char * const format, ...)
 				printf("%i ", va_arg(ap, int));
 				break;
 			case 'f':
-				printf("%d ", va_arg(ap, double));
+				printf("%f ", va_arg(ap, double));
 				break;
 			case 's':
 				b = va_arg(ap, char *);
 				if (b != NULL)
 				{
-					printf("%s", b);
+					printf("%s ", b);
 					break;
 				}
 				printf("(nil)");
 				break;
 			default:
 				pos++;
+				printf(" ");
 				continue;
 			}
 			pos++;

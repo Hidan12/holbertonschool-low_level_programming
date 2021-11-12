@@ -15,15 +15,15 @@ list_t *add_node(list_t **head, const char *str)
 		for (; str[count]; count++)
 			continue;
 	n = malloc(sizeof(list_t));
-	if (!node)
+	if (!n)
 	{
 		free(n);
 		return(NULL);
 	}
-	nodo->str = strdup(str);
-	nodo->len = count;
-	nodo->next = *head;
-	*head = nodo;
+	n->str = strdup(str);
+	n->len = count;
+	n->next = *head;
+	*head = n;
 	}
 
 	return (*head);

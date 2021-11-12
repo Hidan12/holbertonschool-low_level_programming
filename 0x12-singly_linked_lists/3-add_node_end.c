@@ -1,12 +1,12 @@
 #include "lists.h"
 /**
- * print_list - print list
- * @h: node.
+ * add_node_end - add node in last
+ * @head: node.
+ * @str: add str.
  * Return: size of node.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	
 	int count = 0;
 	list_t *cre_n, *n;
 
@@ -32,7 +32,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		n = *head;
-		for (;n->next; n = n->next)
+		for (; n->next; n = n->next)
 			continue;
 		 n->next = cre_n;
 	}

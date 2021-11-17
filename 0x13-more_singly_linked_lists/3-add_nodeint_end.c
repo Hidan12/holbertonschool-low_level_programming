@@ -20,7 +20,10 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	nodo->next = NULL;
 
 	if (*head == NULL)
+	{
 		*head = nodo;
+		return (*head);
+	}
 	else
 	{
 		temp = *head;

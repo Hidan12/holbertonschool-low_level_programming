@@ -16,5 +16,7 @@ int pop_listint(listint_t **head)
 		free(*head);
 		*head = nodo;
 	}
+	else
+		n = 0;
 	return (n);
 }

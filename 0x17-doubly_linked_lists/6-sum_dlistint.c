@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *  sum_dlistint - som the element
+ * sum_dlistint - som the element
  * @head: pointer to the start of the linked list
  *
  * Return: node
@@ -12,11 +12,10 @@ int sum_dlistint(dlistint_t *head)
 
 	if (f != NULL)
 	{
-		for (; f != NULL; sum += f->n)
+		while (f != NULL)
 		{
+			sum += (f->n);
 			f = f->next;
-			if (f == NULL)
-				break;
 		}
 		return (sum);
 	}

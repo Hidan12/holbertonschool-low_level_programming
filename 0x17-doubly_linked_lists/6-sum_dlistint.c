@@ -18,7 +18,7 @@ int sum_dlistint(dlistint_t *head)
 			if (f == NULL)
 				break;
 		}
-		return(sum);
+		return (sum);
 	}
 	return (0);
 }
